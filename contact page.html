@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       body{
+        background-color: white;
+       }
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0 2px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background:#457B9D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1d3557;
+}
+</style>
+</head>
+
+<body >
+    
+    <nav class="navbar">
+        <div class="logo">
+
+            <a href="#"><h1>My Portfolio</h1></a></div><br><br>
+        <div class="navdiv"> 
+            
+              <ul><li id="g" class="nav-ele"><a value="1" href="portfolio.html"target="_self">Home</a></li>
+                <li id="g" class="nav-ele"><a value="2" href="about me.html"target="_self">About Me</a></li>
+                <li id="g" class="nav-ele"><a value="3" href="projects.html"target="_self">Project</a></li>
+                <li id="g" class="nav-ele"><a value="4" href="blogg.html"target="_self">Blog</a></li>
+                <li id="g" class="nav-ele"><a value="5" href="#"target="_self">Contact</a></li></ul>
+            
+        </div>
+    </nav>/
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required height="180px" ></textarea>
+
+            <button type="submit" >Send</button>
+        </form>
+
+        </div>
+        
+
+    </section>
+    <footer><p>&copy; 2024 Janhavi Srivastava. All rights reserved.</p></footer>
+    <script src="jsPortfolio.js"></script></body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <h1>Name and Pssword</h1>
+</head>
+<body>
+    <form> 
+    <h2>Enter your name</h2>
+    <label for="TI">Name:</label>
+    <input type="text" id ="TI" name="TI" placeholder="Enter YOUR NAME">
+
+    <h2>Enter Password</h2>
+    <label for="pw">Password:</label>
+    <input type="password" id="pw" name="pw" placeholder="Enter Password">
+
+    <h2>Radio Buttons</h2>
+    <label>Choose an Avenger:</label><br>
+
+    <input type="radio" id="ca" name="avengers" value="Captain America">
+    <label for="ca">Captain America</label><br>
+
+    <input type="radio" id="bw" name="avengers" value="Black Widow">
+    <label for="bw">Black Widow</label><br>
+
+    <input type="radio" id="im" name="avengers" value="Iron Man">
+    <label for="im">Iron Man</label><br>
+    
+    <h2>Checkboxes</h2>
+    <label>Choose your favorite MCU Series:</label><br>
+
+    <input type="checkbox" id="sw" name="mcuseries" value="WandaVision">
+    <label for="sw">WandaVision</label><br>
+
+    <input type="checkbox" id="aaa" name="mcuseries" value="Agatha All Along">
+    <label for="aaa">Agatha All Along</label><br>
+
+    <input type="checkbox" id="lk" name="mcuseries" value="Loki">
+    <label for="lk">Loki</label><br>
+
+    <h2>Select Dropdown</h2>
+    <label for="movies">Choose A Movie</label><br>
+    <select id="movies" name="movies" size="" multiple placeholder="Choose a movie">
+        <option value="cw">CAPTAIN AMERICA Civil War</option>
+        <option value="im">IRON MAN 2</option>
+        <option value="th">THOR</option>
+        <option value="sm">SPIDER-MAN Homecoming</option>
+        <option value="ds">DOCTOR STRANGE in Multiverse Of Madness</option>
+    </select><br><br>
+
+    <h2>Text Area</h2>
+    <label for="comments">Comment your thoughts on MCU phase 4</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="70" placeholder="Phase 4 review" ></textarea><br>
+
+    <h2>File Upload</h2>
+    <label for="fileupload">Choose a file</label><br>
+    <input type="file" id="fileupload" name="fileupload"><br><br>
+
+    <label for="range2">Choose a range for this parameter</label><br>
+    <input type="range" id="range2" name="range2" min="0" max="100"><br><br>
+
+    <label for="color2">Choose a color for this parameter</label><br>
+    <input type="color" id="color2" name="color2" value="#FF108A"><br><br>
+    <p><b>Actor list</b></p>
+    <input list="actors">
+    <datalist id="actors">
+        <option value="Chris Evans"></option>
+        <option value="Scarlett Johansonn"></option>
+        <option value="Elizabeth Olsen"></option>
+        <option value="Robert Downey JR."></option>
+        <option value="Tom Holland"></option>
+        <option value="Katheryn Hahn"></option>
+    </datalist>
+
+    <br>
+    <br>
+    <br>
+<fieldset>
+    <legend>Personalia</legend>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id ="fname" name="fname" required><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id ="lname" name="lname" value="Srivastava"><br><br>
+    <input type="submit" value="submit"><br>
+    
+</fieldset>
+
+<br>
+<br>
+</body>
+</html>
